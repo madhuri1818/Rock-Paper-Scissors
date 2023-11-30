@@ -1,0 +1,130 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  text-align: center;
+  height: 100vh;
+  margin:0;
+  /* width: 100vh; */
+  /* position: absolute; */
+  /* top:50%;
+  left:50%;
+  transform: translate(-50%, -50%); */
+  background-image: url('./bgg.webp');
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  image-resolution:1080px;
+  /* border-radius: 5%; */
+}
+
+.heading {
+  font-size: 50px;
+  align-items: center;
+}
+.heading-container {
+  border: 2px solid #a4e5e0; /* Border style for the heading container */
+  padding: 10px; /* Adjust padding as needed */
+  margin-bottom: 10px; /* Add margin to separate the heading box from other elements */
+}
+.score {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.choice {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 50%; */
+}
+
+.computer-hand {
+  width: 196px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 35%;
+}
+
+.user-hand {
+  width: 196px;
+  transform: rotateY(180deg);
+  max-width: 100%;
+  height: auto;
+  margin-left: -50%;
+  margin-right: 15%;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  padding: 75px;
+  text-align: center;
+  align-items: center;
+  transition: margin 0.5s ease;
+}
+
+.button {
+  width: 112px;
+  height: 65px;
+  border-spacing:50px;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#a4e5e0; 
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  /* margin-bottom: 10px;
+  margin-top: 20px; */
+  margin-left: 50px;
+  transition: margin 0.5s ease;
+}
+
+.result {
+  padding: -95px;
+  margin-bottom: auto;
+  margin-top: -58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#restart{
+  margin-bottom: auto;
+  margin-top: -40px;
+}
+@media only screen and (max-width: 600px) {
+  .button-div {
+    flex-direction: column;
+    padding:10px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+  .result {
+    font-size: 12px; 
+    margin-top: 10px; 
+} 
+.computer-hand{
+  margin-left: 0%;
+}
+.user-hand{
+  margin-left: -2%;
+}
+#restart{
+  margin-bottom: auto;
+  margin-top: 15px;
+}
+}
